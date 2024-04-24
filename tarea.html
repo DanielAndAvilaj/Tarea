@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="tarea.js"></script>
+</head>
+<body>
+    <form action="#" onsubmit="return validarFormulario()">
+        <h2>Formulario de postulación</h2>
+
+        <div class="form_input">
+            <label for="rut">Rut</label>
+            <input type="text" placeholder="12345678-9" id="rut">
+        </div>
+
+        <div class="form_input">
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Daniel" id="nombre">
+        </div>
+
+        <div class="form_input">
+            <label for="ap_paterno">Apellido paterno</label>
+            <input type="text" placeholder="Ávila" id="ap_paterno">
+        </div>
+
+        <div class="form_input">
+            <label for="ap_materno">Apellido materno</label>
+            <input type="text" placeholder="Jiménez" id="ap_materno">
+        </div>
+
+        <div class="form_input">
+            <label for="fec_nac">Fecha de Nacimiento</label>
+            <input type="date" placeholder="" id="fec_nac">
+        </div>
+
+        <div class="form_input">
+            <label for="edad">Edad</label>
+            <input type="number" placeholder="Ingresa tu edad" id="edad">
+        </div>
+
+        <div class="form_input">
+            <label for="genero">Género</label>
+            <select name="genero" id="genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
+
+        <div class="form_input">
+            <label for="email">Email</label>
+            <input type="text" placeholder="ejemplo@gmail.com" id="email">
+        </div>
+
+        <div class="form_input">
+            <label for="celular">Celular</label>
+            <input type="text" placeholder="9 87654321" id="celular">
+        </div>
+
+        <div class="form_input">
+            <label>Profesión</label>
+            <input list="profesion" name="profesion" id="profesion">
+            <datalist id="profesion">
+                <option value="Ing. Informática">Para el cargo de programación web</option>
+                <option value="RR.HH">Para el cargo de gestión de Recursos Humanos</option>
+                <option value="Ing. Construcción">Para el cargo de Jefe de obras</option>
+                <option value="Diseño Gráfico">para el cargo de cajero en el McDonald's</option>
+            </datalist>
+        </div>
+
+        <div class="form_input">
+            <label for="carta">Motivación para postular al trabajo</label>
+            <textarea id="carta" rows="10" placeholder="Deja tu carta..."></textarea>
+        </div>
+
+        <button type="button" onclick="crearCarta()">Crear Carta</button>
+
+        <input class="submit" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
